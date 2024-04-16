@@ -1,8 +1,8 @@
 # manager.py
 
-import typer
 from typing_extensions import Annotated
-
+from asyncio.exceptions import CancelledError
+import typer
 import uvicorn
 
 
@@ -33,4 +33,7 @@ def run_server(
 
 
 if __name__ == "__main__":
-    cli()
+    try:
+        cli()
+    except CancelledError:
+        print("Stopping server!")
