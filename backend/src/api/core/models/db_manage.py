@@ -8,10 +8,10 @@ from sqlalchemy.ext.asyncio import (
     AsyncSession,
 )
 
-from backend.src.api.core.config import settings
+from ..config import settings
 
 
-class DataBaseManage:
+class DataBaseManager:
     def __init__(self, url: str, echo: bool) -> None:
         self.engine = create_async_engine(url=url, echo=echo)
         self.session_factory = async_sessionmaker(
@@ -40,4 +40,4 @@ class DataBaseManage:
             await sess.close()
 
 
-db_manage = DataBaseManage(url=settings.db.db_url, echo=settings.db.db_echo)
+db_manage = DataBaseManager(url=settings.db.db_url, echo=settings.db.db_echo)
