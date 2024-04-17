@@ -1,5 +1,4 @@
 from datetime import datetime
-from typing import TYPE_CHECKING
 
 from sqlalchemy import String, BigInteger, TIMESTAMP, func
 from sqlalchemy.dialects.postgresql import UUID

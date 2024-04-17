@@ -1,9 +1,8 @@
-from typing import Any
 import uuid
 
-from sqlalchemy import Integer, func
+from sqlalchemy import Integer
 from sqlalchemy.dialects.postgresql import UUID
-from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, declared_attr
+from sqlalchemy.orm import DeclarativeBase, mapped_column, declared_attr
 
 
 class Base(DeclarativeBase):

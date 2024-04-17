@@ -5,7 +5,7 @@ __all__ = (
     "Client",
 )
 
-from .users import User
 from .base import Base
-from .tokens import Token
 from .clients import Client
+from .tokens import Token
+from .users import User

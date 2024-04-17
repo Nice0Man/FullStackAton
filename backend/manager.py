@@ -1,10 +1,10 @@
 # manager.py
 
-from typing_extensions import Annotated
 from asyncio.exceptions import CancelledError
+
 import typer
 import uvicorn
-
+from typing_extensions import Annotated
 
 cli = typer.Typer()
 

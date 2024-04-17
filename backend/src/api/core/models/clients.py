@@ -1,10 +1,9 @@
 from datetime import datetime
+from enum import Enum
+
 from sqlalchemy import String, DateTime
 
 from .base import Base, Mapped, mapped_column
-
-from enum import Enum
-
 from .mixins import UserRelationMixin
 
 

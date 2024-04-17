@@ -22,11 +22,11 @@ class TestSettings(TestCase):
     def test_auth_jwt_default_values(self):
         self.assertEqual(
             self.settings.auth_jwt.private_key_path,
-            Path(__file__).parent.parent / "certs" / "jwt-private.pem",
+            Path(__file__).parent.parent.parent / "certs" / "jwt-private.pem",
         )
         self.assertEqual(
             self.settings.auth_jwt.public_key_path,
-            Path(__file__).parent.parent / "certs" / "jwt-public.pem",
+            Path(__file__).parent.parent.parent / "certs" / "jwt-public.pem",
         )
         self.assertEqual(
             self.settings.auth_jwt.REFRESH_TOKEN_EXPIRES_MINUTES, 60 * 24 * 7

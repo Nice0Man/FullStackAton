@@ -1,5 +1,5 @@
-from unittest import TestCase
 from datetime import datetime
+from unittest import TestCase
 from uuid import UUID
 
 from backend.src.api.core.models.tokens import Token

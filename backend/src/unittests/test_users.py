@@ -1,7 +1,6 @@
 from typing import List
 from unittest import TestCase
 
-
 from backend.src.api.core.models.clients import Client
 from backend.src.api.core.models.users import User
 
