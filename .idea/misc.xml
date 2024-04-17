@@ -3,6 +3,8 @@
   <component name="Black">
     <option name="enabledOnReformat" value="true" />
     <option name="enabledOnSave" value="true" />
+    <option name="executionMode" value="BINARY" />
+    <option name="pathToExecutable" value="C:\Users\Евгений\AppData\Local\pypoetry\Cache\virtualenvs\fast-api-aton-backend-JuCzDwJ2-py3.12\Scripts\black.exe" />
     <option name="sdkName" value="Poetry (FullStackAton) (2)" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Poetry (FullStackAton) (2)" project-jdk-type="Python SDK" />
