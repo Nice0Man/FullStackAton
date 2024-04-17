@@ -18,8 +18,6 @@ class TokenType(BaseModel):
 class AuthJWT(BaseModel):
     private_key_path: Path = BASE_DIR / "certs" / "jwt-private.pem"
     public_key_path: Path = BASE_DIR / "certs" / "jwt-public.pem"
-    JWT_PUBLIC_KEY: str = "guess-me"
-    JWT_PRIVATE_KEY: str = "guess-me"
     REFRESH_TOKEN_EXPIRES_MINUTES: int = 60 * 24 * 7
     ACCESS_TOKEN_EXPIRES_MINUTES: int = 5
     JWT_ALGORITHM: str = "RS256"
